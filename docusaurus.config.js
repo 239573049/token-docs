@@ -4,7 +4,10 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+
+
 /** @type {import('@docusaurus/types').Config} */
+
 const config = {
   title: '文档',
   tagline: '工具扩展文档',
@@ -15,7 +18,6 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'hejiale010426', // Usually your GitHub org/user name.
   projectName: 'hejiale010426', // Usually your repo name.
-
   presets: [
     [
       'classic',
@@ -98,7 +100,7 @@ const config = {
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()}<a href=''> 网站版权权限由小虎所有</a>`,
+        copyright: `© ${new Date().getFullYear()}<a href=''> 网站版权权限由token所有</a>`,
       },
       prism: {
         theme: lightCodeTheme,

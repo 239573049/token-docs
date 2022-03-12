@@ -9,6 +9,7 @@ import HomepageFeatures from '../components/HomepageFeatures';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
+    <div>
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
@@ -22,14 +23,14 @@ function HomepageHeader() {
         </div>
       </div>
     </header>
+    </div>
   );
 }
 
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`欢迎访问token的Docs`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>

@@ -11,12 +11,11 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: '使用方便',
     image: '/img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Docusaurus从一开始就很容易安装，而且用来让你的网站快速启动和运行。  
       </>
     ),
   },
@@ -63,13 +62,13 @@ function Feature({title, image, description}: FeatureItem) {
 export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
-      <div className="container">
+      {/* <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
