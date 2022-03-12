@@ -10,7 +10,7 @@ const config = {
   tagline: '工具扩展文档',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/docs/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'hejiale010426', // Usually your GitHub org/user name.
