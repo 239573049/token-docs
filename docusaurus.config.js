@@ -1,12 +1,17 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
+const React =require("react")
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 
-
 /** @type {import('@docusaurus/types').Config} */
+
+class Title extends React.Component{
+  render(){
+    return (
+      "<div>s</div>"
+    )
+  }
+} 
 
 const config = {
   title: '文档',
@@ -25,12 +30,10 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -40,7 +43,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -58,6 +60,7 @@ const config = {
             label: '教程',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: <Title/>, position: 'left'},
           {
             label: 'Gitee',
             href: 'https://gitee.com/hejiale010426',
