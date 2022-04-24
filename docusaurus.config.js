@@ -12,7 +12,7 @@ const config = {
   title: '文档',
   tagline: '工具扩展文档',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/docs/',
+  baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -73,7 +73,7 @@ const config = {
             items: [
               {
                 label: '文档',
-                to: '/docs/docs/intro',
+                to: '/docs/intro',
               },
             ],
           },
