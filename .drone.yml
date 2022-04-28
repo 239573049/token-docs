@@ -18,7 +18,6 @@ steps:
         path: /drone/src/build
     commands:
       - "npm i && npm run build"
-    
 volumes:
   - name: dockersock
     host:
