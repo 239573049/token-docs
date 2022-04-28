@@ -57,12 +57,6 @@ const config = {
             position: 'left',
             label: '教程',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            label: 'Gitee',
-            href: 'https://gitee.com/hejiale010426',
-            position: 'right',
-          },
         ],
       },
       footer: {
@@ -90,17 +84,13 @@ const config = {
             title: '更多',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'Gitee',
                 href: 'https://gitee.com/hejiale010426',
               },
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()}<a href=''> 网站版权权限由token所有</a>`,
+        copyright: `© ${new Date().getFullYear()}备案号：<a href='http://beian.miit.gov.cn/'> 湘ICP备2022007143号</a>`,
       },
       prism: {
         theme: lightCodeTheme,
