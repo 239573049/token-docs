@@ -52,13 +52,6 @@ const config = {
             position: 'left',
             label: '教程',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/blog', label: '标题', position: 'left'},
-          {
-            label: 'Gitee',
-            href: 'https://gitee.com/hejiale010426',
-            position: 'right',
-          },
         ],
       },
       footer: {
@@ -69,7 +62,7 @@ const config = {
             items: [
               {
                 label: '文档',
-                to: '/docs/docs/intro',
+                to: '/docs/intro',
               },
             ],
           },
@@ -85,10 +78,6 @@ const config = {
           {
             title: '更多',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'Gitee',
                 href: 'https://gitee.com/hejiale010426',
