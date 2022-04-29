@@ -4,6 +4,9 @@ sidebar_position: 1
 
 # Blazor帮助方法
 
+[![NuGet](https://img.shields.io/nuget/dt/XHBlazorHelper.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/XHBlazorHelper/)
+[![NuGet](https://img.shields.io/nuget/v/XHBlazorHelper.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/XHBlazorHelper/)
+
 ## 项目介绍
 
 项目Gitee地址 [BlazorHelper](https://gitee.com/attacking-code-farmer/blazor-help-method)

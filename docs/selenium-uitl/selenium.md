@@ -4,6 +4,9 @@ sidebar_position: 1
 
 # Selenium-Util工具文档
 
+[![NuGet](https://img.shields.io/nuget/dt/SeleniumUtil.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/SeleniumUtil/)
+[![NuGet](https://img.shields.io/nuget/v/SeleniumUtil.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/SeleniumUtil/)
+
 ## 项目介绍
 
 项目Gitee地址 [SeleniumUtil工具](https://gitee.com/attacking-code-farmer/selenium-util)
@@ -12,7 +15,7 @@ sidebar_position: 1
 ## 通过NuGet安装Selenium-Util工具
 
 ```csharp
-Install-Package SeleniumUtil -Version 1.1.6
+Install-Package SeleniumUtil 
 ```
 
 ## 方法构造详细说明

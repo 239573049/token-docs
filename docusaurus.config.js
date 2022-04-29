@@ -5,19 +5,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 
-class Title extends React.Component{
-  render(){
-    return (
-      "<div>s</div>"
-    )
-  }
-} 
 
 const config = {
   title: '文档',
   tagline: '工具扩展文档',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/docs/',
+  baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -60,7 +53,7 @@ const config = {
             label: '教程',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/blog', label: <Title/>, position: 'left'},
+          {to: '/blog', label: '标题', position: 'left'},
           {
             label: 'Gitee',
             href: 'https://gitee.com/hejiale010426',
@@ -103,7 +96,7 @@ const config = {
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()}<a href=''> 网站版权权限由token所有</a>`,
+        copyright: `© ${new Date().getFullYear()}备案号:<a href='http://beian.miit.gov.cn/'> 湘ICP备2022007143号-1</a>`,
       },
       prism: {
         theme: lightCodeTheme,
