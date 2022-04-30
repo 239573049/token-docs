@@ -1,12 +1,9 @@
 kind: pipeline
 name: docs
 type: docker
-
-
 platform:
   os: linux
   arch: amd64
-
 steps:
   - name: build
     image: node:slim
@@ -28,3 +25,4 @@ volumes:
   - name: build
     host:
       path: /root/www/docs
+## drone 部署前端项目至nginx挂载目录
