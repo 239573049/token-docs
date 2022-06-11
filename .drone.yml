@@ -14,7 +14,7 @@ steps:
       - name: build
         path: /drone/src/build
     commands:
-      - "npm i && npm run build"
+      - npm i && npm run build
       
 volumes:
   - name: dockersock
@@ -25,5 +25,5 @@ volumes:
       path: /root/node/docs/node_modules
   - name: build
     host:
-      path: /root/www/docs
+      path: /root/nginx/www/docs
 ## drone 部署前端项目至nginx挂载目录
