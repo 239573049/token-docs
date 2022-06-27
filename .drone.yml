@@ -1,9 +1,11 @@
 kind: pipeline
 name: docs
 type: docker
+
 platform:
   os: linux
   arch: amd64
+
 steps:
   - name: build
     image: node:slim
@@ -13,8 +15,9 @@ steps:
         path: /drone/src/node_modules
       - name: build
         path: /drone/src/build
+        
     commands:
-      - npm config set registry https://registry.npm.taobao.org # 切换淘宝镜像
+      - npm config set registry https://registry.npm.taobao.org
       - npm i && npm run build
       
 volumes:
@@ -27,4 +30,3 @@ volumes:
   - name: build
     host:
       path: /root/nginx/www/docs
-## drone 部署前端项目至nginx挂载目录
