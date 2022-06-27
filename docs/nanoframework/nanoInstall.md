@@ -12,47 +12,27 @@ esp32单片机（支持wifi蓝牙） 安卓数据线（需要支持传输）
 
 ### 注意！请先安装esp32驱动程序
 
-[ESP32驱动链接]('https://pan.baidu.com/s/1V90LMRk13ZaUMJxM2teXbw')
-
-提取码：ztip
-复制一下GitHub镜像 nanoframework/nf-interpreter: nanoFramework Interpreter, CLR, HAL, PAL and reference target boards (github.com) https://github.com/nanoframework/nf-interpreter
+[ESP32驱动链接]('http://nanoframework.oss-cn-shenzhen.aliyuncs.com/MH-ET%20ESP32%E5%BC%80%E5%8F%91%E6%9D%BF%E8%B5%84%E6%96%99.zip')
 
 ### 安装 .NET nanoFramework固件闪存
+
+安装工具
 
 ```shell
 dotnet tool install -g nanoff
 ```
 
-成功安装后，将显示一条消息，显示用于调用该工具的命令以及安装的版本。类似于以下示例：
+刷入固件
 
 ```shell
-You can invoke the tool using the following command: nanoff
-Tool 'nanoff' (version '9.9.9') was successfully installed.
+nanoff --platform esp32 --serialport COM3 --update
 ```
-
-安装路径问题
-
-⚠️当安装在包含变音符号的路径中时，运行STM32设备命令的已知问题。这是由 STM32 多维数据集编程器中的一个已知错误引起的。例如，如果您的用户路径是这种情况，则必须将其安装在具有这些路径的位置。若要实现此目的，请使用以下 .NET Core CLI 命令，该命令指定了将安装该工具的路径：nanoff
-
-```shell
-dotnet tool install nanoff --tool-path c:\a-plain-simple-path-to-install-the-tool
-```
-
-请注意，如果您不与 STM32 设备一起使用，则此限制不适用。
 
 ## 然后准备vs code, 和vs2022,本文将用vs2022做教程
 
 准备好以后将esp32设备和电脑连接（安卓线连接）
 
 开始搭建esp32的nanoframework 开发环境
-
-打开vs code然后点击扩展
-
-![alt-text](../../static/nanoframework/1.png)
-
-### 搜索 nanoframework 然后安装
-
-![alt-text](../../static/nanoframework/2.png)
 
 ### 安装完成以后；打开vs2022,点击继续但无需代码
 
@@ -107,30 +87,12 @@ dotnet tool install nanoff --tool-path c:\a-plain-simple-path-to-install-the-too
 
 ![alt-text](../../static/nanoframework/16.png)
 
-### 安装nanoframework的vscode扩展
-
-![alt-text](../../static/nanoframework/17.png)
-按住ctrl+shift+p ；然后搜索nanoframework 点击nanoframework flash device
-
-等待一小会就会弹框
-
-![alt-text](../../static/nanoframework/18.png)
-安装自己的esp32安装我安装是红色框框的
-
-![alt-text](../../static/nanoframework/19.png)
-![alt-text](../../static/nanoframework/20.png)
-![alt-text](../../static/nanoframework/21.png)
-![alt-text](../../static/nanoframework/22.png)
-
-### 固件烧录完成
-
-![alt-text](../../static/nanoframework/23.png)
 
 然后打开vs2022这个时候我们就可以看到设备了然后点击运行
 
 ![alt-text](../../static/nanoframework/24.png)
 
-### 好了运行完成 
+### 好了运行完成
 
 ![alt-text](../../static/nanoframework/25.png)
 
